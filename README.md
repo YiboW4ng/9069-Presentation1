@@ -26,7 +26,8 @@ Almost all legal e-mails from companies to their customers contain at least one 
 
 Demo/How to run this Demo
 ----
-Demo is in ./phishing&tabnabbing/demo, which contains four html pages
+Demo is in ./phishing&tabnabbing/demo, which contains four html pages. Firstly enter the file through CMD and deploy these four html files to the local server by command 'http-server'. A local host address will be generated, type the address in browser and we can enter the local host. We start with A.html, which is a personal account with some tags and a 'open new page' button. This button is designed by a hacker to triger the tabnabbing. Users will find that the tags work as usual to open some pages they are familiar with. But if they click the button, a new page(B.html) occurs and it warns users something is wrong and they need to sign in again. When users come back to the original pege they will see a log in page(C.html). Actually now the address has been changed and this is a fake log in page. If users are careless and don't notice that stange address change they will trust this fake page and enter their log in information. Hacker can set some functions to this page, once users click 'sign in' buttom, their username and password will be passed to a new page(D.html) and hackers can access these information on the back-end of D.html. In this case users' account information leak out and users don't even know that. Hacker can do something bad with these information like stealing money or sell their account.
+
 
 
 Citations
